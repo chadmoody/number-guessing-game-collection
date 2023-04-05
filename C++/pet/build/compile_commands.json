@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/Chad Moody/OneDrive - Lebanon Valley College/Documents/CS/Programing 2/projects/pet/build",
+  "command": "c:/cygwin64/bin/g++.exe   -g -o CMakeFiles/pet.dir/main.cpp.obj -c \"C:/Users/Chad Moody/OneDrive - Lebanon Valley College/Documents/CS/Programing 2/projects/pet/main.cpp\"",
+  "file": "C:/Users/Chad Moody/OneDrive - Lebanon Valley College/Documents/CS/Programing 2/projects/pet/main.cpp",
+  "output": "CMakeFiles/pet.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/Chad Moody/OneDrive - Lebanon Valley College/Documents/CS/Programing 2/projects/pet/build",
+  "command": "c:/cygwin64/bin/g++.exe   -g -o CMakeFiles/pet.dir/Game.cpp.obj -c \"C:/Users/Chad Moody/OneDrive - Lebanon Valley College/Documents/CS/Programing 2/projects/pet/Game.cpp\"",
+  "file": "C:/Users/Chad Moody/OneDrive - Lebanon Valley College/Documents/CS/Programing 2/projects/pet/Game.cpp",
+  "output": "CMakeFiles/pet.dir/Game.cpp.obj"
+}
+]

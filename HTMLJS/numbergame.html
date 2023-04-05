@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Number Game</title>
+
+        <style>
+body{background-color:0c0c0c;padding-top:100px;font-family: Arial, Helvetica, sans-serif;}
+
+#frame{background-color:0c0c0c;font-size:24px;width:400px;padding-top:20px;}
+#buttons input{font-size:24px;}
+#content{color:white;}
+#content2{color:white;}
+</style>
+    </head>
+
+    <body>
+        <center>
+            <div id='frame'>
+                <div id="content">Div Placeholder</div><p>
+                    <div id='buttons'>
+                        <form>
+                            <input type="button" id="button" value="Click to enter number" onClick="enterNumber()">
+                        </form>
+                    </div>
+                    <div id="content2"> </div><p></p>
+                </div>
+
+            </center>
+
+        </body>
+        <script type="text/javascript">
+        var max = 0;
+        
+        max = prompt("What's range would you like? Enter -1 for difficulty section:",'');
+        var count = 0;
+        
+
+        if (max == -1) {
+        difficulty()
+        }
+        const num = Math.floor(Math.random() * (max - 1)) + 1; // This line generates a number between 1 and the choosen range
+        document.getElementById("content").innerHTML = "I'm thinkning of a number between 1 and " + max;
+        
+        
+        
+        function difficulty() // funtion that runs to choose a specific difficulty
+        {
+            var diff = prompt("Select Difficulty: Easy, Medium, Hard: ",'');
+            if ((diff == "Easy") || (diff == "easy"))
+            {
+                max = 50
+            }
+            else if ((diff == "Medium")||(diff == "medium"))
+            {
+                
+                max = 200;
+            }
+            else if ((diff == "Hard")||(diff == "hard"))
+            {
+                
+                max = 2000;
+            }
+            
+                
+        }
+        
+        
+        
+        
+        
+        function enterNumber()// Funtion that takes the inputed guess and displays if it is greater than, less than or equal to
+        {
+            var guess = prompt("Enter Number: ",'');
+            count++;
+            if (guess > num)
+            {
+                document.getElementById("content").innerHTML = "The number is less then " + guess;
+            }
+            else if (guess < num)
+            {
+                
+                document.getElementById("content").innerHTML = "The number is greater then " + guess;
+            }
+            else
+            {
+                document.getElementById("content").innerHTML = "You Got it Right! Guesses: " + count;
+                document.getElementById("content2").innerHTML = "Refresh Page to Restart";
+                document.getElementById("button").disabled = true;
+            }
+        }
+        
+        
+        </script>
+    </html>

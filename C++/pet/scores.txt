@@ -1,0 +1,6 @@
+Chad: 4 Range: 1 to 100
+t1: 11 Range: 1 to 200
+t2: 14 Range: 1 to 2000
+Me: 13 Range: 1 to 2000
+me: 3 Range: 1 to 10
+Chad: 6 Range: 1 to 100
